@@ -25,8 +25,8 @@ def recommend(movie):
 
 
 st.header('Movie Recommender System')
-movies = pickle.load(open(r'C:\Users\bablu\PycharmProjects\Movie_Recommender-System-main\Movie_Recommender-System-main\movie_list.pkl','rb'))
-similarity = pickle.load(open(r'C:\Users\bablu\PycharmProjects\Movie_Recommender-System-main\Movie_Recommender-System-main\similarity_score.pkl','rb'))
+movies = pickle.load(open(r'C:\Users\pal\github\Movie_Recommender-System\movie_list.pkl','rb'))
+similarity = pickle.load(open(r'C:\Users\pal\github\Movie_Recommender-System\similarity_score.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
